@@ -1,21 +1,26 @@
--- [[ This script has been deobuscated by Halis, BUT I have no animosity towards the owner of this script and I respect him.  unprotected script: leak. There's nothing we can do. ]]
+-- This script was created by Yusuf. If you intend to use this code to "skid," know this: skids only fool themselves; using someone else's code and passing it off as your own is for idiots.
 
-local runService = game:GetService("RunService")
-local players = game:GetService("Players")
-local replicatedStorage = game:GetService("ReplicatedStorage")
-local starterPack = game:GetService("StarterPack")
-local lighting = game:GetService("Lighting")
-local v1 = game:GetService("Workspace")
-local starterGui = game:GetService("StarterGui")
-local virtualUser = game:GetService("VirtualUser")
-local stats = game:GetService("Stats")
-local userInputService = game:GetService("UserInputService")
+local library = loadstring(game:HttpGet("https://github.com/waxxan2/GuiWozzy/raw/refs/heads/main/Gui.lua.txt", true))()
+local displayName = game.Players.LocalPlayer.DisplayName
 
-local addWindow = loadstring(game:HttpGet("https://kai-library.edgeone.app/", true))():AddWindow("Kai || Private", {
-  main_color = Color3.fromRGB(255, 0, 0),
-  min_size = Vector2.new(570, 700),
-  can_resize = false,
+local window = library:AddWindow(“WOZZY HUB PAİD | Muscle Legends || HELLO - ".. displayName, {
+    title_bar = {
+        Color3.fromRGB(120, 0, 160), 
+        Color3.fromRGB(30, 0, 40),  
+        Color3.fromRGB(0, 0, 0)    
+    }, 
+    title_bar_transparency = 0.1, 
+    background = {
+        Color3.fromRGB(10, 0, 15), 
+        Color3.fromRGB(15, 5, 20), 
+        Color3.fromRGB(20, 10, 25)
+    }, 
+    background_transparency = 0.1, 
+    main_color = Color3.fromRGB(140, 0, 180), 
+    min_size = Vector2.new(450, 330), 
+    can_resize = true 
 })
+
 
 local killing = addWindow:AddTab("Killing")
 local normalFarm = addWindow:AddTab("Normal Farm")
