@@ -18,7 +18,7 @@ _G.player = player
 local displayName = player.DisplayName
 _G.displayName = displayName
 
-local window = library:AddWindow("Pulse Hub Public | Muscle Legends || Hello - " .. displayName, {
+local window = library:AddWindow("Wozzy Hub Private | Muscle Legends || Hello - " .. displayName, {
     title_bar = {
         Color3.fromRGB(15, 23, 42),
         Color3.fromRGB(10, 15, 30),
