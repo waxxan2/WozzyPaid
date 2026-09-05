@@ -20,19 +20,19 @@ _G.displayName = displayName
 
 local window = library:AddWindow("Wozzy Hub Private | Muscle Legends || Hello - " .. displayName, {
     title_bar = {
-        Color3.fromRGB(15, 23, 42),
-        Color3.fromRGB(10, 15, 30),
-        Color3.fromRGB(5, 8, 20),
+        Color3.fromRGB(120, 0, 160),
+        Color3.fromRGB(30, 0, 40),
+        Color3.fromRGB(0, 0, 0),
     },
     title_bar_transparency = 0.1,
     background = {
-        Color3.fromRGB(15, 23, 42),
-        Color3.fromRGB(10, 15, 30),
-        Color3.fromRGB(5, 8, 20)
+        Color3.fromRGB(10, 0, 15),
+        Color3.fromRGB(15, 5, 20),
+        Color3.fromRGB(20, 10, 30)
     },
     background_transparency = 0.1,
-    main_color = Color3.fromRGB(15, 23, 42),
-    min_size = Vector2.new(430, 290),
+    main_color = Color3.fromRGB(140, 0, 80),
+    min_size = Vector2.new(450, 330),
     can_resize = true
 })
 
@@ -136,7 +136,7 @@ killing:AddButton("Remove Punch Anim", function()
     if not _G.BackpackAddedConnection then
       _G.BackpackAddedConnection = game.Players.LocalPlayer.Backpack.ChildAdded:Connect(function(child)
         if child:IsA("Tool") then
-          task.wait(0.1)
+          task.wait(0.01)
           f3(child)
         end
       end)
@@ -145,7 +145,7 @@ killing:AddButton("Remove Punch Anim", function()
     if not _G.CharacterToolAddedConnection and character3 then
       _G.CharacterToolAddedConnection = character3.ChildAdded:Connect(function(child2)
         if child2:IsA("Tool") then
-          task.wait(0.1)
+          task.wait(0.01)
           f3(child2)
         end
       end)
@@ -187,7 +187,7 @@ killing:AddButton("Remove Punch Anim", function()
 
       _G.CharacterToolAddedConnection = character5.ChildAdded:Connect(function(child3)
         if child3:IsA("Tool") then
-          task.wait(0.1)
+          task.wait(0.01)
           processTool(child3)
         end
       end)
@@ -1593,7 +1593,7 @@ Rock:AddSwitch("🔥 Eternal Rock 750K", function(Value)
     getgenv().autoFarm = Value
     task.spawn(function()
         while getgenv().autoFarm do
-            task.wait(0.01)
+            task.wait(0.001)
             if not getgenv().autoFarm then break end
             if game:GetService("Players").LocalPlayer.Durability.Value >= 750000 then
                 for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
