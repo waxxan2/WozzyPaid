@@ -2462,7 +2462,7 @@ autoEquipTools:AddSwitch("Auto Weight", function(p41)
       end
 
       players.LocalPlayer.muscleEvent:FireServer("rep")
-      task.wait(0.1)
+      task.wait(0.01)
     end
   end)
 end, "Levanta pesas automáticamente")
@@ -2491,7 +2491,7 @@ autoEquipTools:AddSwitch("Auto Pushups", function(p42)
       end
 
       players.LocalPlayer.muscleEvent:FireServer("rep")
-      task.wait(0.1)
+      task.wait(0.01)
     end
   end)
 end, "Haz flexiones automáticamente")
@@ -2520,7 +2520,7 @@ autoEquipTools:AddSwitch("Auto Handstands", function(p43)
       end
 
       players.LocalPlayer.muscleEvent:FireServer("rep")
-      task.wait(0.1)
+      task.wait(0.01)
     end
   end)
 end, "Haz paradas de manos automáticamente")
@@ -2549,7 +2549,7 @@ autoEquipTools:AddSwitch("Auto Situps", function(p44)
       end
 
       players.LocalPlayer.muscleEvent:FireServer("rep")
-      task.wait(0.1)
+      task.wait(0.01)
     end
   end)
 end, "Haz abdominales automáticamente")
@@ -2574,7 +2574,7 @@ autoEquipTools:AddSwitch("Auto Punch", function(p45)
             end
           end
 
-          task.wait(0.1)
+          task.wait(0.01)
         end
       end
     end)
